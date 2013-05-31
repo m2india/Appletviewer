@@ -1,0 +1,104 @@
+AWT		- Abstract windowing Toolkit
+
+		- Window based application 
+
+
+
+	Class		 Interface			methods
+
+//	Label				
+	
+//	TextField	ActionListener		actionPerformed(ActionEvent e)
+			TextListener		textValueChanged(TextEvent e)
+
+//	Button		ActionListener		actionPerformed(ActionEvent e)
+
+//	Checkbox	ItemListener		itemStateChanged(ItemEvent e)
+			
+//	List		ItemListener		itemStateChanged(ItemEvent e)
+			ActionListener		actionPerformed(ActionEvent e)
+
+//	Choice		ItemListener		itemStateChanged(ItemEvent e)
+		
+//	TextArea		
+
+//	Scrollbar	AdjustmentListener		adjustmentValueChanged(AdjustmentEvent e)
+
+//	Panel
+		
+//	ScrollPane
+
+
+
+//			KeyListener		keyPressed(KeyEvent e)
+						keyReleased(KeyEvent e)
+						keyTyped(KeyEvent e)
+
+//			MouseListener		mouseEntered(MouseEvent e)
+						mouseExited(MouseEvent e)
+						mousePressed(MouseEvent e)
+						mouseReleased(MouseEvent e)
+						mouseClicked(MouseEvent e)	
+
+//			MouseMotionListener	mouseMoved(MouseEvent e)
+						mouseDragged(MouseEvent e)
+
+//			FocusListener		focusGained(FocusEvent e)
+						focusLost(FocusEvent e)
+
+			ContainerListener	componentAdded(ContainerEvent e)
+						componentRemoved(ContainerEvent e)
+
+			
+			ComponentListener	componentResized(ComponentEvent e)
+						componentMoved(ComponentEvent e)
+						componentHidden(ComponentEvent e)
+						componentShown(ComponentEvent e)
+
+//			WindowListener		windowOpened(WindowEvent e)
+						windowClosed(WindowEvent e)
+						windowClosing(WindowEvent e)
+						windowActivated(WindowEvent e)
+						windowDeactivated(WindowEvent e)
+						windowIconified(WindowEvent e)
+						windowDeiconified(WindowEvent e)
+
+
+
+
+
+			Interface			Class
+			------------			-------
+
+			MouseListener		MouseAdapter
+			MouseMotionListener	MouseMotionAdapter
+			WindowListener		WindowAdapter
+			KeyListener		KeyAdapter			
+
+
+
+	add		- add component to container
+	doLayout	- reassign layout
+	validate	- reassign layout
+	show		- for Visibility
+	pack		- pack to components size
+	setSize		- size of container
+	setVisible	- for visibility
+	repaint		- refresh	=> update() => paint()
+	setLayout	- sets the particular layout
+
+	Layouts
+//		1) FlowLayout	- Default for Panel, Applet
+//		2) BorderLayout	- Default for Frame, Dialog, Window
+//		3) GridLayout
+
+		4) CardLayout
+		5) GridBagLayout
+
+	Container	
+//		1) Panel
+//		2) Applet
+		3) window
+//		4) Frame
+		5) Dialog
+						
